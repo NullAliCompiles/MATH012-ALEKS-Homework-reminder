@@ -11,9 +11,9 @@ from dotenv import load_dotenv
 BLACKBOARD_LINK = "https://blackboard.kfupm.edu.sa/ultra/courses/_17883_1/outline"
 
 MESSAGE =  f"\
-تذكير بواجب ALEKS!! \n \
-ينتهي الواجب يوم بكرا السبت الساعة 11:59PM \n \n \
-ملاحظة: الواجبات عليها 7% من المعدل \n \n \
+تذكير بواجب ALEKS!!\n\
+ينتهي الواجب يوم بكرا السبت الساعة 11:59PM\n\n\
+ملاحظة: الواجبات عليها 7% من المعدل\n\n\
 رابط البلاكبورد:\n \
 {BLACKBOARD_LINK}\
 "
