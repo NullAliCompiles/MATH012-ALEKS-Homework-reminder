@@ -1,6 +1,6 @@
-# تجاهل ملف المتغيرات السرية
+#ignore .env files
 .env
 
-# تجاهل ملفات بايثون المؤقتة
+#ignore python cache
 __pycache__/
 *.pyc
