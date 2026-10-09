@@ -14,7 +14,7 @@ MESSAGE =  f"\
 تذكير بواجب ALEKS!!\n\
 ينتهي الواجب يوم بكرا السبت الساعة 11:59PM\n\n\
 ملاحظة: الواجبات عليها 7% من المعدل\n\n\
-رابط البلاكبورد:\n \
+رابط البلاك بورد:\n \
 {BLACKBOARD_LINK}\
 "
 
@@ -57,12 +57,13 @@ def send_ALEKS_hw_reminder():
 
 
 if __name__ == "__main__":
-    # Schedule the reminder for Friday at 7:00 PM.
+    # Schedule the reminder
+    # schedule.every().DAY.at("24Hours:Minute").do(function)
     schedule.every().friday.at("19:00").do(send_ALEKS_hw_reminder)
+    
+    #in case you wanna test if the message does get sent or not, uncomment the line underneath:
+    #send_ALEKS_hw_reminder()
 
     while True:
         schedule.run_pending()
         time.sleep(45)
-
-    #in case you wanna test if the message does get sent or not, uncomment the line underneath:
-    #send_ALEKS_hw_reminder()
